@@ -12,6 +12,13 @@
          * @type {Object}
          */
         var _sites = {
+                email: {
+                    url: 'mailto:friend@email.com?subject={{title}}&body={{description}}:%20{{url}}',
+                    popup: {
+                        width: 600,
+                        height: 600
+                    }
+                },
                 pinterest: {
                     url: 'http://pinterest.com/pin/create/button/?url={{url}}&media={{media}}&description={{description}}',
                     popup: {
