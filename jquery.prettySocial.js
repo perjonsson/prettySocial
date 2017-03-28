@@ -27,7 +27,7 @@
                     }
                 },
                 twitter: {
-                    url: 'https://twitter.com/share?url={{url}}&via={{via}}&text={{description}}',
+                    url: 'https://twitter.com/share?url={{url}}&text={{description}}', /*&via={{via}}*/
                     popup: {
                         width: 685,
                         height: 500
@@ -41,7 +41,7 @@
                     }
                 },
                 linkedin: {
-                    url: 'https://www.linkedin.com/shareArticle?mini=true&url={{url}}&title={{title}}&summary={{description}}+&source={{via}}',
+                    url: 'https://www.linkedin.com/shareArticle?mini=true&url={{url}}&title={{title}}&summary={{description}}', /*+&source={{via}}*/
                     popup: {
                         width: 600,
                         height: 600
@@ -80,7 +80,7 @@
                 return url;
             };
 
-        return this.each(function() {
+        return this.find('a').each(function() {
 
             // declare $(this) as variable
             var $this = $(this);
